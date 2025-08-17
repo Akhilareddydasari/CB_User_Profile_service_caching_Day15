@@ -9,13 +9,13 @@ import jakarta.persistence.Table;
 public class User {
     @Id
     private String username;
-    private String fullName;
+    private String full_name;
     private String bio;
 
     public User() {}
-    public User(String username, String fullName, String bio) {
+    public User(String username, String full_name, String bio) {
         this.username = username;
-        this.fullName = fullName;
+        this.full_name = full_name;
         this.bio = bio;
     }
 	public String getUsername() {
@@ -25,10 +25,10 @@ public class User {
 		this.username = username;
 	}
 	public String getFullName() {
-		return fullName;
+		return full_name;
 	}
-	public void setFullName(String fullName) {
-		this.fullName = fullName;
+	public void setFullName(String full_name) {
+		this.full_name = full_name;
 	}
 	public String getBio() {
 		return bio;
